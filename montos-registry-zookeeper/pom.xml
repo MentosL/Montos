@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lushun.test</groupId>
+		<artifactId>netty.rpc</artifactId>
+		<version>1.0.0-RELEASE</version>
+	</parent>
+	<artifactId>montos-registry-zookeeper</artifactId>
+
+	<dependencies>
+		<!-- SLF4J -->
+
+		<!-- ZooKeeper -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+		</dependency>
+		<!-- ZkClient -->
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+		</dependency>
+		<!-- RPC Common -->
+		<dependency>
+			<groupId>com.lushun.test</groupId>
+			<artifactId>montos-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- RPC Registry -->
+		<dependency>
+			<groupId>com.lushun.test</groupId>
+			<artifactId>montos-registry</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+</project>
